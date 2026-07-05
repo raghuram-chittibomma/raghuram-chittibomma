@@ -67,7 +67,7 @@ A Python toolkit for validating healthcare encounter files and generating realis
 
 ---
 
-## 🧠 AI-Native Engineering Principles I Practice
+## 🧠 AI-Native Engineering Principles  
 
 - **Deterministic floor, agentic ceiling** — business-critical facts and constraints come from deterministic systems; agents reason *within* those boundaries, not around them.
 - **Evidence before recommendation** — every AI output is grounded in retrieved policies, structured records, or traceable source documents.
@@ -75,18 +75,6 @@ A Python toolkit for validating healthcare encounter files and generating realis
 - **Evals are part of the product** — golden cases, citation checks, and action-validity checks ship alongside the feature, not after it.
 - **Tools reusable across interfaces** — the same capability is callable from UI, API, and MCP clients, not locked inside one demo screen.
 - **Local-first demos, production-patterned architecture** — even synthetic-data projects get real tests, CI, and documented operating assumptions.
-
----
-
-## 🛠️ Technical Stack
-
-| Area | Tools |
-|---|---|
-| **AI / Agentic** | LangGraph, LangChain, OpenAI APIs, RAG, MCP, tool calling, structured outputs, human-in-the-loop workflows |
-| **Backend / APIs** | Python, FastAPI, Pydantic, SQLAlchemy, REST, pytest |
-| **Data / Retrieval** | PostgreSQL, pgvector, ChromaDB, synthetic data generation, metadata & lineage modeling |
-| **Interfaces** | Gradio, API workbenches |
-| **Engineering Practices** | GitHub Actions CI, automated testing, eval suites, ADRs, audit-first design |
 
 ---
 
