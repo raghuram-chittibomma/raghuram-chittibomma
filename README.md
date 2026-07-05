@@ -4,7 +4,7 @@
 
 I build AI-native systems — agentic workflows, RAG pipelines, and MCP-enabled tools — designed with the same rigor as any production software: tested, documented, and safety-gated.
 
-My background spans **20+ years in software delivery, Agile leadership, program management, business analysis, and solution architecture** across ERP, healthcare, finance, and supply chain. I'm now applying that enterprise experience to build AI systems that solve real business workflow problems, not just demo well.
+My background spans **20+ years in software delivery, Agile leadership, program management, product management, business analysis, and solution architecture** across ERP, healthcare, finance, and supply chain. I'm now applying that enterprise experience to build AI systems that solve real business workflow problems, not just demo well.
 
 `Python` `LangGraph` `FastAPI` `Gradio` `PostgreSQL` `pgvector` `ChromaDB` `MCP` `Docker` `Pydantic`
 
