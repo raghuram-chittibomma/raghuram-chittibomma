@@ -2,9 +2,7 @@
 
 ### AI-Native Developer | Agentic AI Systems | RAG | MCP | Enterprise AI Applications
 
-I build AI-native systems — agentic workflows, RAG pipelines, and MCP-enabled tools — designed with the same rigor as any production software: tested, documented, and safety-gated.
-
-My background spans **20+ years in software delivery, Agile leadership, program management, product management, business analysis, and solution architecture** across ERP, healthcare, finance, and supply chain. I'm now applying that enterprise experience to build AI systems that solve real business workflow problems, not just demo well.
+I build practical AI systems that combine LLMs, deterministic business rules, retrieval, tool use, human review, evals, and production-style engineering to solve real-world business and customer problems.
 
 `Python` `LangGraph` `FastAPI` `Gradio` `PostgreSQL` `pgvector` `ChromaDB` `MCP` `Docker` `Pydantic`
 
@@ -89,16 +87,6 @@ A Python toolkit for validating healthcare encounter files and generating realis
 | **Data / Retrieval** | PostgreSQL, pgvector, ChromaDB, synthetic data generation, metadata & lineage modeling |
 | **Interfaces** | Gradio, API workbenches |
 | **Engineering Practices** | GitHub Actions CI, automated testing, eval suites, ADRs, audit-first design |
-
----
-
-## 🎯 Current Focus
-
-- AI-native enterprise workflow applications
-- MCP-based tool ecosystems
-- RAG quality and retrieval evaluation
-- Human-in-the-loop approval systems
-- Responsible AI adoption for business operations
 
 ---
 
