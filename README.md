@@ -23,6 +23,17 @@ Classifies support requests, routes each task type to the lowest-viable Bedrock 
 
 `Python` · `AWS` · `Bedrock` · `LangGraph` · `CDK` · `DynamoDB` · `MCP`
 
+### 🧰 [enterprise-sdlc-mcp](https://github.com/raghuram-chittibomma/enterprise-sdlc-mcp)
+**Reusable build-time SDLC agent catalog, served over MCP**
+
+A shared, versioned definition of *how* AI coding agents deliver software — so every project doesn't reinvent its own agent roles and review bar. One catalog of agents (Product Analyst, Solution Architect, Code Reviewer, etc.) and checklists is installed per-project and served consistently across repos and teams via MCP, instead of copy-pasted or drifting between projects.
+- 8 agent roles + 22 skills — generic SDLC checklists (PR review, architecture review, backlog creation) plus domain-adjacent technical checklists (CDK, IAM least privilege, Bedrock Guardrails, DynamoDB data modeling)
+- Deterministic `{{project.*}}` placeholder resolution from each consuming repo's own manifest — one catalog, project-specific context, no LLM involved in assembly
+- Installed editable into each consuming project's own venv; no cross-repo path coupling, so it scales to many independent projects
+- Prompts for one-shot independent code review and architecture review subagent launches, keeping review rigor uniform across projects
+
+`Python` · `MCP` · `SDLC Tooling`
+
 ### 📦 [csr-order-exception-assistant](https://github.com/raghuram-chittibomma/csr-order-exception-assistant)
 **Agentic assistant for customer service order investigation and resolution**
 
