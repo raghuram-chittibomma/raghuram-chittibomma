@@ -4,11 +4,24 @@
 
 I build practical AI systems that combine LLMs, deterministic business rules, retrieval, tool use, human review, evals, and production-style engineering to solve real-world business and customer problems.
 
-`Python` `LangGraph` `FastAPI` `Gradio` `PostgreSQL` `pgvector` `ChromaDB` `MCP` `Docker` `Pydantic`
+`Python` `AWS Bedrock` `LangGraph` `FastAPI` `Gradio` `PostgreSQL` `pgvector` `ChromaDB` `MCP` `Docker` `Pydantic`
 
 ---
 
 ## 🔭 Featured Projects
+
+### ☁️ [supportrouter-aws](https://github.com/raghuram-chittibomma/supportrouter-aws)
+**AI customer support agent for a DTC electronics retailer, built on AWS Bedrock**
+
+Classifies support requests, routes each task type to the lowest-viable Bedrock model, answers via RAG + Lambda tools over order/return/refund data, and escalates to a human for refunds over $100 or low-confidence cases — with quality and cost claims backed by versioned eval scorecards, not assumptions.
+- API Gateway → LangGraph on Lambda; Bedrock Converse, Guardrails, and Knowledge Bases over S3 Vectors (OpenSearch Serverless avoided on purpose)
+- DynamoDB routing table driven by offline scorecards → policy generate/adopt → publish (lowest-viable model per task type)
+- Isolated tool Lambdas (order / return / refund) with least-privilege IAM; refunds over $100 require human approval
+- Separate eval plane: golden scenarios, live Bedrock candidates, LLM-as-judge, prompt-cache measurement, GitHub-first ADRs/releases
+- Delivered via a GitHub-first SDLC with build-time roles (architect, implementation planner, code reviewer) served over MCP by [enterprise-sdlc-mcp](https://github.com/raghuram-chittibomma/enterprise-sdlc-mcp) — kept separate from the runtime agent
+- Opt-in Bedrock AgentCore Runtime + Gateway MCP as dual-run stretch (quality/cost explicitly not measured)
+
+`Python` · `AWS` · `Bedrock` · `LangGraph` · `CDK` · `DynamoDB` · `MCP`
 
 ### 📦 [csr-order-exception-assistant](https://github.com/raghuram-chittibomma/csr-order-exception-assistant)
 **Agentic assistant for customer service order investigation and resolution**
