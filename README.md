@@ -99,6 +99,7 @@ A Python toolkit for validating healthcare encounter files and generating realis
 - **Evals are part of the product** — golden cases, citation checks, and action-validity checks ship alongside the feature, not after it.
 - **Tools reusable across interfaces** — the same capability is callable from UI, API, and MCP clients, not locked inside one demo screen.
 - **Local-first demos, production-patterned architecture** — even synthetic-data projects get real tests, CI, and documented operating assumptions.
+- **Cost is a design constraint** — route each task to the lowest-viable model, not the biggest one, and default cloud infrastructure to a near-zero-cost idle state when not in active use.
 
 ---
 
