@@ -23,6 +23,18 @@ Classifies support requests, routes each task type to the lowest-viable Bedrock 
 
 `Python` · `AWS` · `Bedrock` · `LangGraph` · `CDK` · `DynamoDB` · `MCP`
 
+### 🎓 [college-admission-app](https://github.com/raghuram-chittibomma/college-admission-app)
+**End-to-end college admissions planner with hybrid scoring and grounded AI**
+
+Helps a family organize a high-stress planning process — school research, shortlist, fit/cost cues, applications, and a final decision — in one full-stack workspace instead of spreadsheets and one-off AI chats. AI is a core capability (research, compare, coaching), but admit odds stay on a deterministic scoring floor with labeled estimates, provenance, and confidence rather than vibes-based answers.
+- Shared College Knowledge Base (Scorecard + Common Data Set + LLM research) with field provenance; separate student workspaces for shortlists, assessments, and trackers
+- Hybrid admit %: rule-table primary estimate + factor breakdown; LLM explains and may offer a secondary opinion without overriding the planning %
+- My Colleges hub: batch research / student assessment / compare, sticky decision table, fact matrix + AI narrative grounded in the research package
+- Soft journey UI (profile → discover → assess/compare → apply/track → decide) on Next.js + FastAPI + PostgreSQL/pgvector
+- GitHub-first delivery with durable docs/ADRs, CI, Playwright smoke, and build-time SDLC agents via [enterprise-sdlc-mcp](https://github.com/raghuram-chittibomma/enterprise-sdlc-mcp)
+
+`Python` · `FastAPI` · `Next.js` · `PostgreSQL` · `pgvector` · `OpenAI` · `MCP`
+
 ### 🧰 [enterprise-sdlc-mcp](https://github.com/raghuram-chittibomma/enterprise-sdlc-mcp)
 **Reusable build-time SDLC agent catalog, served over MCP**
 
