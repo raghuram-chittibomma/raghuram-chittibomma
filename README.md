@@ -39,11 +39,12 @@ Helps a family organize a high-stress planning process — school research, shor
 **Reusable build-time SDLC agent catalog, served over MCP**
 
 A shared, versioned definition of *how* AI coding agents deliver software — so every project doesn't reinvent its own agent roles and review bar. One catalog of agents (Product Analyst, Solution Architect, Code Reviewer, etc.) and checklists is installed per-project and served consistently across repos and teams via MCP, instead of copy-pasted or drifting between projects.
-- 9 agent roles + 29 skills — generic SDLC checklists (PR review, architecture review, application security, dependency/supply-chain, CI/CD pipeline, incident postmortems) plus stack-specific technical checklists (CDK, IAM least privilege, Bedrock Guardrails, DynamoDB data modeling, API contracts)
-- Every skill is tagged with *when* it applies (always vs. stack-specific like AWS/FastAPI/LLM-backed) and every agent declares a machine-readable code-modify permission and file-path allowlist, not just prose a human has to trust
+- 9 agent roles + 31 skills — generic SDLC checklists (PR review, architecture review, application security, dependency/supply-chain, CI/CD pipeline, incident postmortems) plus stack-specific technical checklists (CDK, IAM least privilege, Bedrock Guardrails, DynamoDB data modeling, API contracts, knowledge-graph modeling, Graph RAG retrieval)
+- Every skill is tagged with *when* it applies (always vs. stack-specific like AWS/FastAPI/LLM-backed/graph) and every agent declares a machine-readable code-modify permission and file-path allowlist, not just prose a human has to trust
 - Deterministic `{{project.*}}` placeholder resolution from each consuming repo's own manifest, with a `validate_manifest` check so a missing key surfaces before it leaks into a live prompt
+- A copy-in project scaffold (manifest, docs skeleton, AGENTS.md, PR/issue templates, CI) so a new repo satisfies the catalog's contract on day one instead of reverse-engineering it from an existing consumer
 - Installed editable into each consuming project's own venv; no cross-repo path coupling, so it scales to many independent projects
-- The core PR review checklist enforces a Blocker/Major/Minor severity model with cited file+line evidence, not a pass/fail vibe check
+- The core PR review checklist enforces a Blocker/Major/Minor severity model with cited file+line evidence, not a pass/fail vibe check — backed by a Cursor hook that gates PR merges on that review actually happening
 
 `Python` · `MCP` · `SDLC Tooling`
 
